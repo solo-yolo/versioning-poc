@@ -139,5 +139,7 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+target
+
 # End of https://www.gitignore.io/api/osx,java,intellij+all
 jackrabbit/

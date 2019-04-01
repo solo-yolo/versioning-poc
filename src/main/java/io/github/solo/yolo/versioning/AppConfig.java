@@ -10,6 +10,7 @@ import org.apache.jackrabbit.ocm.manager.ObjectContentManager;
 import org.apache.jackrabbit.ocm.manager.impl.ObjectContentManagerImpl;
 import org.apache.jackrabbit.ocm.mapper.Mapper;
 import org.apache.jackrabbit.ocm.mapper.impl.annotation.AnnotationMapperImpl;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -22,8 +23,12 @@ import javax.jcr.SimpleCredentials;
 public class AppConfig {
 
     @Bean(destroyMethod = "logout")
-    Session session() throws RepositoryException {
-        return JcrUtils.getRepository().login(new SimpleCredentials("admin", "admin".toCharArray()));
+    Session session(
+            @Value("${jackrabbit.uri}") String uri,
+            @Value("${jackrabbit.user}") String username,
+            @Value("${jackrabbit.pass}") String password) throws RepositoryException {
+        return JcrUtils.getRepository(uri)
+                .login(new SimpleCredentials(username, password.toCharArray()));
     }
 
     @Bean

@@ -3,3 +3,7 @@ spring:
         name: versioning-poc
 server:
     port: 7070
+jackrabbit:
+    uri: http://localhost:3333/server
+    user: admin
+    pass: admin
