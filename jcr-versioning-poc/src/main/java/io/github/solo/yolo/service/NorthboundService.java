@@ -1,6 +1,6 @@
-package io.github.solo.yolo.versioning.service;
+package io.github.solo.yolo.service;
 
-import io.github.solo.yolo.versioning.dto.RouterConfiguration;
+import io.github.solo.yolo.dto.RouterConfiguration;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;

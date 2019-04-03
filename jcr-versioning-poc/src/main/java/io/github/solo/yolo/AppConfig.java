@@ -1,10 +1,10 @@
-package io.github.solo.yolo.versioning;
+package io.github.solo.yolo;
 
-import io.github.solo.yolo.versioning.dto.Acl;
-import io.github.solo.yolo.versioning.dto.Bgp;
-import io.github.solo.yolo.versioning.dto.Interface;
-import io.github.solo.yolo.versioning.dto.Neighbor;
-import io.github.solo.yolo.versioning.dto.RouterConfiguration;
+import io.github.solo.yolo.dto.Acl;
+import io.github.solo.yolo.dto.Bgp;
+import io.github.solo.yolo.dto.Interface;
+import io.github.solo.yolo.dto.Neighbor;
+import io.github.solo.yolo.dto.RouterConfiguration;
 import org.apache.jackrabbit.commons.JcrUtils;
 import org.apache.jackrabbit.ocm.manager.ObjectContentManager;
 import org.apache.jackrabbit.ocm.manager.impl.ObjectContentManagerImpl;

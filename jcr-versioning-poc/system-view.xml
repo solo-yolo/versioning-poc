@@ -123,7 +123,7 @@
                                         <sv:value>foo</sv:value>
                                     </sv:property>
                                     <sv:property sv:name="ocm_classname" sv:type="String">
-                                        <sv:value>io.github.solo.yolo.versioning.dto.RouterConfiguration</sv:value>
+                                        <sv:value>RouterConfiguration</sv:value>
                                     </sv:property>
                                 </sv:node>
                             </sv:node>
@@ -166,7 +166,7 @@
                                         <sv:value>bar</sv:value>
                                     </sv:property>
                                     <sv:property sv:name="ocm_classname" sv:type="String">
-                                        <sv:value>io.github.solo.yolo.versioning.dto.RouterConfiguration</sv:value>
+                                        <sv:value>RouterConfiguration</sv:value>
                                     </sv:property>
                                 </sv:node>
                             </sv:node>
@@ -210,7 +210,7 @@
                                         <sv:value>foo</sv:value>
                                     </sv:property>
                                     <sv:property sv:name="ocm_classname" sv:type="String">
-                                        <sv:value>io.github.solo.yolo.versioning.dto.RouterConfiguration</sv:value>
+                                        <sv:value>RouterConfiguration</sv:value>
                                     </sv:property>
                                     <sv:node sv:name="bgp">
                                         <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -229,7 +229,7 @@
                                             <sv:value>5c5883f5-9eac-45d6-bf48-cb89cd140b4b</sv:value>
                                         </sv:property>
                                         <sv:property sv:name="ocm_classname" sv:type="String">
-                                            <sv:value>io.github.solo.yolo.versioning.dto.Bgp</sv:value>
+                                            <sv:value>Bgp</sv:value>
                                         </sv:property>
                                         <sv:node sv:name="neighbors">
                                             <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -261,7 +261,7 @@
                                                     <sv:value>some-neighbor</sv:value>
                                                 </sv:property>
                                                 <sv:property sv:name="ocm_classname" sv:type="String">
-                                                    <sv:value>io.github.solo.yolo.versioning.dto.Neighbor</sv:value>
+                                                    <sv:value>Neighbor</sv:value>
                                                 </sv:property>
                                                 <sv:property sv:name="remoteAddress" sv:type="String">
                                                     <sv:value>10.10.10.10</sv:value>
@@ -396,7 +396,7 @@
                                         <sv:value>some-name</sv:value>
                                     </sv:property>
                                     <sv:property sv:name="ocm_classname" sv:type="String">
-                                        <sv:value>io.github.solo.yolo.versioning.dto.RouterConfiguration</sv:value>
+                                        <sv:value>RouterConfiguration</sv:value>
                                     </sv:property>
                                 </sv:node>
                             </sv:node>
@@ -440,7 +440,7 @@
                                         <sv:value>some-name</sv:value>
                                     </sv:property>
                                     <sv:property sv:name="ocm_classname" sv:type="String">
-                                        <sv:value>io.github.solo.yolo.versioning.dto.RouterConfiguration</sv:value>
+                                        <sv:value>RouterConfiguration</sv:value>
                                     </sv:property>
                                     <sv:node sv:name="bgp">
                                         <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -459,7 +459,7 @@
                                             <sv:value>0353152f-361f-460d-aded-8619bb845a45</sv:value>
                                         </sv:property>
                                         <sv:property sv:name="ocm_classname" sv:type="String">
-                                            <sv:value>io.github.solo.yolo.versioning.dto.Bgp</sv:value>
+                                            <sv:value>Bgp</sv:value>
                                         </sv:property>
                                         <sv:node sv:name="neighbors">
                                             <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -491,7 +491,7 @@
                                                     <sv:value>some-neighbor</sv:value>
                                                 </sv:property>
                                                 <sv:property sv:name="ocm_classname" sv:type="String">
-                                                    <sv:value>io.github.solo.yolo.versioning.dto.Neighbor</sv:value>
+                                                    <sv:value>Neighbor</sv:value>
                                                 </sv:property>
                                                 <sv:property sv:name="remoteAddress" sv:type="String">
                                                     <sv:value>10.10.10.10</sv:value>
@@ -535,7 +535,7 @@
                                                 <sv:value>eth1/1</sv:value>
                                             </sv:property>
                                             <sv:property sv:name="ocm_classname" sv:type="String">
-                                                <sv:value>io.github.solo.yolo.versioning.dto.Interface</sv:value>
+                                                <sv:value>Interface</sv:value>
                                             </sv:property>
                                         </sv:node>
                                         <sv:node sv:name="collection-element">
@@ -558,7 +558,7 @@
                                                 <sv:value>eth1/2</sv:value>
                                             </sv:property>
                                             <sv:property sv:name="ocm_classname" sv:type="String">
-                                                <sv:value>io.github.solo.yolo.versioning.dto.Interface</sv:value>
+                                                <sv:value>Interface</sv:value>
                                             </sv:property>
                                         </sv:node>
                                     </sv:node>
@@ -592,7 +592,7 @@
                                                 <sv:value>7eebe331-eec5-4dc3-9e13-10a9af89cf7f</sv:value>
                                             </sv:property>
                                             <sv:property sv:name="ocm_classname" sv:type="String">
-                                                <sv:value>io.github.solo.yolo.versioning.dto.Acl</sv:value>
+                                                <sv:value>Acl</sv:value>
                                             </sv:property>
                                             <sv:property sv:name="port" sv:type="Long">
                                                 <sv:value>8080</sv:value>
@@ -5394,7 +5394,7 @@
             <sv:value>foo</sv:value>
         </sv:property>
         <sv:property sv:name="ocm_classname" sv:type="String">
-            <sv:value>io.github.solo.yolo.versioning.dto.RouterConfiguration</sv:value>
+            <sv:value>RouterConfiguration</sv:value>
         </sv:property>
         <sv:node sv:name="bgp">
             <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -5404,7 +5404,7 @@
                 <sv:value>123</sv:value>
             </sv:property>
             <sv:property sv:name="ocm_classname" sv:type="String">
-                <sv:value>io.github.solo.yolo.versioning.dto.Bgp</sv:value>
+                <sv:value>Bgp</sv:value>
             </sv:property>
             <sv:node sv:name="neighbors">
                 <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -5418,7 +5418,7 @@
                         <sv:value>some-neighbor</sv:value>
                     </sv:property>
                     <sv:property sv:name="ocm_classname" sv:type="String">
-                        <sv:value>io.github.solo.yolo.versioning.dto.Neighbor</sv:value>
+                        <sv:value>Neighbor</sv:value>
                     </sv:property>
                     <sv:property sv:name="remoteAddress" sv:type="String">
                         <sv:value>10.10.10.10</sv:value>
@@ -5465,7 +5465,7 @@
             <sv:value>some-name</sv:value>
         </sv:property>
         <sv:property sv:name="ocm_classname" sv:type="String">
-            <sv:value>io.github.solo.yolo.versioning.dto.RouterConfiguration</sv:value>
+            <sv:value>RouterConfiguration</sv:value>
         </sv:property>
         <sv:node sv:name="bgp">
             <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -5475,7 +5475,7 @@
                 <sv:value>123</sv:value>
             </sv:property>
             <sv:property sv:name="ocm_classname" sv:type="String">
-                <sv:value>io.github.solo.yolo.versioning.dto.Bgp</sv:value>
+                <sv:value>Bgp</sv:value>
             </sv:property>
             <sv:node sv:name="neighbors">
                 <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -5489,7 +5489,7 @@
                         <sv:value>some-neighbor</sv:value>
                     </sv:property>
                     <sv:property sv:name="ocm_classname" sv:type="String">
-                        <sv:value>io.github.solo.yolo.versioning.dto.Neighbor</sv:value>
+                        <sv:value>Neighbor</sv:value>
                     </sv:property>
                     <sv:property sv:name="remoteAddress" sv:type="String">
                         <sv:value>10.10.10.10</sv:value>
@@ -5515,7 +5515,7 @@
                     <sv:value>eth1/1</sv:value>
                 </sv:property>
                 <sv:property sv:name="ocm_classname" sv:type="String">
-                    <sv:value>io.github.solo.yolo.versioning.dto.Interface</sv:value>
+                    <sv:value>Interface</sv:value>
                 </sv:property>
             </sv:node>
             <sv:node sv:name="collection-element">
@@ -5529,7 +5529,7 @@
                     <sv:value>eth1/2</sv:value>
                 </sv:property>
                 <sv:property sv:name="ocm_classname" sv:type="String">
-                    <sv:value>io.github.solo.yolo.versioning.dto.Interface</sv:value>
+                    <sv:value>Interface</sv:value>
                 </sv:property>
             </sv:node>
         </sv:node>
@@ -5545,7 +5545,7 @@
                     <sv:value>127.0.0.1</sv:value>
                 </sv:property>
                 <sv:property sv:name="ocm_classname" sv:type="String">
-                    <sv:value>io.github.solo.yolo.versioning.dto.Acl</sv:value>
+                    <sv:value>Acl</sv:value>
                 </sv:property>
                 <sv:property sv:name="port" sv:type="Long">
                     <sv:value>8080</sv:value>

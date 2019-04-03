@@ -1,11 +1,11 @@
-package io.github.solo.yolo.versioning.resource;
+package io.github.solo.yolo.resource;
 
 
-import io.github.solo.yolo.versioning.dto.RouterConfiguration;
-import io.github.solo.yolo.versioning.dto.VersionInfo;
-import io.github.solo.yolo.versioning.dto.VersionWrapper;
-import io.github.solo.yolo.versioning.service.NorthboundService;
-import io.github.solo.yolo.versioning.service.VersioningService;
+import io.github.solo.yolo.dto.RouterConfiguration;
+import io.github.solo.yolo.dto.VersionInfo;
+import io.github.solo.yolo.dto.VersionWrapper;
+import io.github.solo.yolo.service.NorthboundService;
+import io.github.solo.yolo.service.VersioningService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.DeleteMapping;

@@ -1,4 +1,4 @@
-package io.github.solo.yolo.versioning.service;
+package io.github.solo.yolo.service;
 
 public class VersioningException extends RuntimeException {
 

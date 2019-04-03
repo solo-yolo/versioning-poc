@@ -29,7 +29,7 @@
                                         id="fcd1bc29-d5bf-464d-b536-b4708b3fb423"
                                         jcr:frozenPrimaryType="nt:unstructured"
                                         jcr:frozenUuid="6994bfba-7d6d-4bff-b0c5-0e6d39c927c4" name="foo"
-                                        ocm_classname="io.github.solo.yolo.versioning.dto.RouterConfiguration"/>
+                                        ocm_classname="RouterConfiguration"/>
                             </_x0031_.0>
                             <_x0031_.1 jcr:primaryType="nt:version" jcr:uuid="b1d2e5bb-9533-4b61-b6d0-96e64cebc881"
                                     jcr:created="2019-04-01T13:12:39.817+03:00">
@@ -38,7 +38,7 @@
                                         id="fcd1bc29-d5bf-464d-b536-b4708b3fb423"
                                         jcr:frozenPrimaryType="nt:unstructured"
                                         jcr:frozenUuid="6994bfba-7d6d-4bff-b0c5-0e6d39c927c4" name="bar"
-                                        ocm_classname="io.github.solo.yolo.versioning.dto.RouterConfiguration"/>
+                                        ocm_classname="RouterConfiguration"/>
                             </_x0031_.1>
                             <_x0031_.2 jcr:primaryType="nt:version" jcr:uuid="ca75d92a-99c8-4686-a32f-bd8a2607672e"
                                     jcr:created="2019-04-01T13:14:31.601+03:00">
@@ -47,11 +47,11 @@
                                         id="fcd1bc29-d5bf-464d-b536-b4708b3fb423"
                                         jcr:frozenPrimaryType="nt:unstructured"
                                         jcr:frozenUuid="6994bfba-7d6d-4bff-b0c5-0e6d39c927c4" name="foo"
-                                        ocm_classname="io.github.solo.yolo.versioning.dto.RouterConfiguration">
+                                        ocm_classname="RouterConfiguration">
                                     <bgp jcr:primaryType="nt:frozenNode" jcr:uuid="0a81d4b6-d241-4c75-a0fa-b20425c5a657"
                                             asn="123" jcr:frozenPrimaryType="nt:unstructured"
                                             jcr:frozenUuid="5c5883f5-9eac-45d6-bf48-cb89cd140b4b"
-                                            ocm_classname="io.github.solo.yolo.versioning.dto.Bgp">
+                                            ocm_classname="Bgp">
                                         <neighbors jcr:primaryType="nt:frozenNode"
                                                 jcr:uuid="f7234f5d-8187-4c79-9f4d-d9ce16409ebe"
                                                 jcr:frozenPrimaryType="nt:unstructured"
@@ -61,7 +61,7 @@
                                                     jcr:frozenPrimaryType="nt:unstructured"
                                                     jcr:frozenUuid="ca2aa298-5102-46c6-bc35-83eb53086d37"
                                                     name="some-neighbor"
-                                                    ocm_classname="io.github.solo.yolo.versioning.dto.Neighbor"
+                                                    ocm_classname="Neighbor"
                                                     remoteAddress="10.10.10.10" remoteAs="321"/>
                                         </neighbors>
                                     </bgp>
@@ -99,7 +99,7 @@
                                         id="459b2250-105f-499f-bf84-140dd8b6c2ec"
                                         jcr:frozenPrimaryType="nt:unstructured"
                                         jcr:frozenUuid="1ba11a19-bc67-4f3a-8712-c6b237239913" name="some-name"
-                                        ocm_classname="io.github.solo.yolo.versioning.dto.RouterConfiguration"/>
+                                        ocm_classname="RouterConfiguration"/>
                             </_x0031_.0>
                             <_x0031_.1 jcr:primaryType="nt:version" jcr:uuid="750abd49-f2f1-44aa-b463-a7864994fd97"
                                     jcr:created="2019-04-01T13:53:04.340+03:00">
@@ -109,11 +109,11 @@
                                         id="459b2250-105f-499f-bf84-140dd8b6c2ec"
                                         jcr:frozenPrimaryType="nt:unstructured"
                                         jcr:frozenUuid="1ba11a19-bc67-4f3a-8712-c6b237239913" name="some-name"
-                                        ocm_classname="io.github.solo.yolo.versioning.dto.RouterConfiguration">
+                                        ocm_classname="RouterConfiguration">
                                     <bgp jcr:primaryType="nt:frozenNode" jcr:uuid="e710164a-d82d-4648-a0b4-91df6b84d4e1"
                                             asn="123" jcr:frozenPrimaryType="nt:unstructured"
                                             jcr:frozenUuid="0353152f-361f-460d-aded-8619bb845a45"
-                                            ocm_classname="io.github.solo.yolo.versioning.dto.Bgp">
+                                            ocm_classname="Bgp">
                                         <neighbors jcr:primaryType="nt:frozenNode"
                                                 jcr:uuid="d2417f5e-610b-4749-8404-1ceaf7c89d15"
                                                 jcr:frozenPrimaryType="nt:unstructured"
@@ -123,7 +123,7 @@
                                                     jcr:frozenPrimaryType="nt:unstructured"
                                                     jcr:frozenUuid="d301da62-ed61-4db8-9c02-2a3b52939064"
                                                     name="some-neighbor"
-                                                    ocm_classname="io.github.solo.yolo.versioning.dto.Neighbor"
+                                                    ocm_classname="Neighbor"
                                                     remoteAddress="10.10.10.10" remoteAs="321"/>
                                         </neighbors>
                                     </bgp>
@@ -135,12 +135,12 @@
                                                 jcr:uuid="ee96472c-d626-4d03-a79d-9c22c13f2890" address="192.168.0.1"
                                                 jcr:frozenPrimaryType="nt:unstructured"
                                                 jcr:frozenUuid="5980b86b-5279-461c-a5fc-bbd2b7a44e41" name="eth1/1"
-                                                ocm_classname="io.github.solo.yolo.versioning.dto.Interface"/>
+                                                ocm_classname="Interface"/>
                                         <collection-element jcr:primaryType="nt:frozenNode"
                                                 jcr:uuid="145ff583-00b1-42be-b8e1-e45c3ce1b23c" address="192.168.1.1"
                                                 jcr:frozenPrimaryType="nt:unstructured"
                                                 jcr:frozenUuid="73572bb8-e5db-4515-a29c-33c9ef80acdd" name="eth1/2"
-                                                ocm_classname="io.github.solo.yolo.versioning.dto.Interface"/>
+                                                ocm_classname="Interface"/>
                                     </interfaces>
                                     <acl jcr:primaryType="nt:frozenNode" jcr:uuid="6889fa6b-23db-4315-9f6c-09e7ce65a129"
                                             jcr:frozenPrimaryType="nt:unstructured"
@@ -149,7 +149,7 @@
                                                 jcr:uuid="94d0d62a-e9b2-431e-bd0d-68cbf616a50c" address="127.0.0.1"
                                                 jcr:frozenPrimaryType="nt:unstructured"
                                                 jcr:frozenUuid="7eebe331-eec5-4dc3-9e13-10a9af89cf7f"
-                                                ocm_classname="io.github.solo.yolo.versioning.dto.Acl" port="8080"
+                                                ocm_classname="Acl" port="8080"
                                                 rule="ACCEPT"/>
                                     </acl>
                                 </jcr:frozenNode>
@@ -732,11 +732,11 @@
             jcr:uuid="6994bfba-7d6d-4bff-b0c5-0e6d39c927c4" description="bar" id="fcd1bc29-d5bf-464d-b536-b4708b3fb423"
             jcr:baseVersion="ca75d92a-99c8-4686-a32f-bd8a2607672e" jcr:isCheckedOut="false"
             jcr:versionHistory="152ad5fa-ab16-4a6e-b796-02c8f32e1a80" name="foo"
-            ocm_classname="io.github.solo.yolo.versioning.dto.RouterConfiguration">
-        <bgp jcr:primaryType="nt:unstructured" asn="123" ocm_classname="io.github.solo.yolo.versioning.dto.Bgp">
+            ocm_classname="RouterConfiguration">
+        <bgp jcr:primaryType="nt:unstructured" asn="123" ocm_classname="Bgp">
             <neighbors jcr:primaryType="nt:unstructured">
                 <collection-element jcr:primaryType="nt:unstructured" name="some-neighbor"
-                        ocm_classname="io.github.solo.yolo.versioning.dto.Neighbor" remoteAddress="10.10.10.10"
+                        ocm_classname="Neighbor" remoteAddress="10.10.10.10"
                         remoteAs="321"/>
             </neighbors>
         </bgp>
@@ -746,23 +746,23 @@
             jcr:uuid="1ba11a19-bc67-4f3a-8712-c6b237239913" description="some router configuration"
             id="459b2250-105f-499f-bf84-140dd8b6c2ec" jcr:baseVersion="750abd49-f2f1-44aa-b463-a7864994fd97"
             jcr:isCheckedOut="false" jcr:versionHistory="393167ca-3c7a-4fb3-8f3b-f9466cfcb51d" name="some-name"
-            ocm_classname="io.github.solo.yolo.versioning.dto.RouterConfiguration">
-        <bgp jcr:primaryType="nt:unstructured" asn="123" ocm_classname="io.github.solo.yolo.versioning.dto.Bgp">
+            ocm_classname="RouterConfiguration">
+        <bgp jcr:primaryType="nt:unstructured" asn="123" ocm_classname="Bgp">
             <neighbors jcr:primaryType="nt:unstructured">
                 <collection-element jcr:primaryType="nt:unstructured" name="some-neighbor"
-                        ocm_classname="io.github.solo.yolo.versioning.dto.Neighbor" remoteAddress="10.10.10.10"
+                        ocm_classname="Neighbor" remoteAddress="10.10.10.10"
                         remoteAs="321"/>
             </neighbors>
         </bgp>
         <interfaces jcr:primaryType="nt:unstructured">
             <collection-element jcr:primaryType="nt:unstructured" address="192.168.0.1" name="eth1/1"
-                    ocm_classname="io.github.solo.yolo.versioning.dto.Interface"/>
+                    ocm_classname="Interface"/>
             <collection-element jcr:primaryType="nt:unstructured" address="192.168.1.1" name="eth1/2"
-                    ocm_classname="io.github.solo.yolo.versioning.dto.Interface"/>
+                    ocm_classname="Interface"/>
         </interfaces>
         <acl jcr:primaryType="nt:unstructured">
             <collection-element jcr:primaryType="nt:unstructured" address="127.0.0.1"
-                    ocm_classname="io.github.solo.yolo.versioning.dto.Acl" port="8080" rule="ACCEPT"/>
+                    ocm_classname="Acl" port="8080" rule="ACCEPT"/>
         </acl>
     </_x0034_59b2250-105f-499f-bf84-140dd8b6c2ec>
 </jcr:root>

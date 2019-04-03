@@ -1,4 +1,4 @@
-package io.github.solo.yolo.versioning.dto;
+package io.github.solo.yolo.dto;
 
 import lombok.Data;
 import org.apache.jackrabbit.ocm.mapper.impl.annotation.Field;

@@ -1,4 +1,4 @@
-package io.github.solo.yolo.versioning.dto;
+package io.github.solo.yolo.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;

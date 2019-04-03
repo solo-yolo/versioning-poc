@@ -1,8 +1,8 @@
-package io.github.solo.yolo.versioning.service;
+package io.github.solo.yolo.service;
 
-import io.github.solo.yolo.versioning.dto.RouterConfiguration;
-import io.github.solo.yolo.versioning.dto.VersionInfo;
-import io.github.solo.yolo.versioning.dto.VersionWrapper;
+import io.github.solo.yolo.dto.RouterConfiguration;
+import io.github.solo.yolo.dto.VersionInfo;
+import io.github.solo.yolo.dto.VersionWrapper;
 
 import java.util.Collection;
 
