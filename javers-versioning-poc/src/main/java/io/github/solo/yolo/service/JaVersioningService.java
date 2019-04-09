@@ -1,10 +1,16 @@
 package io.github.solo.yolo.service;
 
+import static com.mongodb.client.model.Filters.and;
+import static com.mongodb.client.model.Filters.eq;
+
 import com.google.gson.JsonObject;
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoCollection;
 import io.github.solo.yolo.dto.RouterConfiguration;
 import io.github.solo.yolo.dto.VersionInfo;
 import io.github.solo.yolo.dto.VersionWrapper;
 import lombok.RequiredArgsConstructor;
+import org.bson.Document;
 import org.javers.core.Javers;
 import org.javers.core.commit.CommitId;
 import org.javers.core.json.JsonConverter;
@@ -31,6 +37,7 @@ public class JaVersioningService implements VersioningService {
 
     private final Javers javers;
     private final JsonConverter jsonConverter;
+    private final MongoClient mongoClient;
 
     @Override
     public void checkpoint(String id, RouterConfiguration item, String... labels) {
@@ -110,6 +117,15 @@ public class JaVersioningService implements VersioningService {
 
     @Override
     public void removeVersion(String id, String version) {
-        throw new UnsupportedOperationException();
+        MongoCollection<Document> collection = mongoClient.getDatabase("javers").getCollection("jv_snapshots");
+
+        Document document = collection.findOneAndDelete(and(
+                eq("globalId_key", "router-config/" + id),
+                eq("version", Long.valueOf(version))));
+
+        if (document == null) {
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND);
+        }
+
     }
 }
