@@ -3,7 +3,6 @@ package io.github.solo.yolo.service;
 import static com.mongodb.client.model.Filters.and;
 import static com.mongodb.client.model.Filters.eq;
 
-import com.google.gson.JsonObject;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoCollection;
 import io.github.solo.yolo.dto.RouterConfiguration;
@@ -12,12 +11,10 @@ import io.github.solo.yolo.dto.VersionWrapper;
 import lombok.RequiredArgsConstructor;
 import org.bson.Document;
 import org.javers.core.Javers;
-import org.javers.core.commit.CommitId;
-import org.javers.core.json.JsonConverter;
 import org.javers.core.metamodel.object.CdoSnapshot;
-import org.javers.core.metamodel.object.CdoSnapshotState;
 import org.javers.repository.jql.JqlQuery;
 import org.javers.repository.jql.QueryBuilder;
+import org.javers.shadow.Shadow;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
@@ -36,7 +33,6 @@ import java.util.stream.Collectors;
 public class JaVersioningService implements VersioningService {
 
     private final Javers javers;
-    private final JsonConverter jsonConverter;
     private final MongoClient mongoClient;
 
     @Override
@@ -52,14 +48,9 @@ public class JaVersioningService implements VersioningService {
 
     @Override
     public VersionWrapper<RouterConfiguration> get(String id, String version) {
-        JqlQuery query = QueryBuilder.byInstanceId(id, RouterConfiguration.class)
-                .withVersion(Long.valueOf(version)).build();
-
-        List<CdoSnapshot> snapshots = javers.findSnapshots(query);
-
-        return snapshots.stream()
+        return get(id).stream()
+                .filter(v -> v.getVersion().equals(version))
                 .findFirst()
-                .map(this::convertToWrapper)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
     }
 
@@ -68,22 +59,23 @@ public class JaVersioningService implements VersioningService {
         JqlQuery query = QueryBuilder.byInstanceId(id, RouterConfiguration.class).build();
 
         List<CdoSnapshot> snapshots = javers.findSnapshots(query);
+        List<Shadow<RouterConfiguration>> shadows = javers.findShadows(query);
 
-        return snapshots.stream().map(this::convertToWrapper).collect(Collectors.toList());
+        return snapshots.stream()
+                .map(s -> convertToWrapper(s, shadows.stream()
+                        .filter(shadow -> shadow.getCommitId().equals(s.getCommitId()))
+                        .findFirst()))
+                .collect(Collectors.toList());
     }
 
-    VersionWrapper<RouterConfiguration> convertToWrapper(CdoSnapshot snapshot) {
+    VersionWrapper<RouterConfiguration> convertToWrapper(CdoSnapshot snapshot,
+            Optional<Shadow<RouterConfiguration>> shadow) {
         return VersionWrapper.<RouterConfiguration>builder()
-                .item(convert(snapshot.getState()))
+                .item(shadow.map(Shadow::get).orElse(null))
                 .version(String.valueOf(snapshot.getVersion()))
                 .time(snapshot.getCommitMetadata().getCommitDateInstant().toString())
                 .labels(snapshot.getCommitMetadata().getProperties().values())
                 .build();
-    }
-
-    RouterConfiguration convert(CdoSnapshotState snapshotState) {
-        JsonObject json = (JsonObject) jsonConverter.toJsonElement(snapshotState);
-        return jsonConverter.fromJson(json.get("properties"), RouterConfiguration.class);
     }
 
     @Override
