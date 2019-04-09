@@ -53,7 +53,7 @@ public class JaVersioningService implements VersioningService {
     @Override
     public VersionWrapper<RouterConfiguration> get(String id, String version) {
         JqlQuery query = QueryBuilder.byInstanceId(id, RouterConfiguration.class)
-                .withCommitId(CommitId.valueOf(version)).build();
+                .withVersion(Long.valueOf(version)).build();
 
         List<CdoSnapshot> snapshots = javers.findSnapshots(query);
 
@@ -89,7 +89,7 @@ public class JaVersioningService implements VersioningService {
     @Override
     public VersionInfo getVersionInfo(String id, String version) {
         JqlQuery query = QueryBuilder.byInstanceId(id, RouterConfiguration.class)
-                .withCommitId(CommitId.valueOf(version)).build();
+                .withVersion(Long.valueOf(version)).build();
 
         List<CdoSnapshot> snapshots = javers.findSnapshots(query);
 
