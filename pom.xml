@@ -5,6 +5,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>jcr-versioning-poc</module>
+        <module>javers-versioning-poc</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
